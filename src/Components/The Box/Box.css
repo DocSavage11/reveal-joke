@@ -14,12 +14,20 @@ a {
     text-decoration: none;
 }
 
-.Right-Left {
+.Right-Door {
     transform: translateX(100%);
 }
 
-.Top-Bottom {
-    transform: translateX(100%);
+.Left-Door {
+    transform: translateX(-100%);
+}
+
+.Top-Door {
+    transform: translateY(-100%);
+}
+
+.Bottom-Door {
+    transform: translateY(100%);
 }
 
 .Container {
@@ -87,7 +95,7 @@ a {
 
     z-index: -1;
 
-    transition: 2.5s;
+    transition: 1s;
 }
 
 .Inner-Door-Bottom {
@@ -105,7 +113,7 @@ a {
 
     z-index: -1;
 
-    transition: 2.5s;
+    transition: 1s;
 }
 
 .Revealer {
