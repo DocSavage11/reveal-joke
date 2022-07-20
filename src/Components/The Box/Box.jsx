@@ -48,7 +48,7 @@ const Box = () => {
         <div className={doors ? "Outer-Door-Right Right-Door " : "Outer-Door-Right"}></div>
     </div>
 
-    <button onClick={doubleFunction} className='Revealer Reveal-Button'><p>Toggle</p></button>
+    <button onClick={doubleFunction} className='Revealer Reveal-Button'><p>Bruh</p></button>
     {/* <button className='Revealer Hide-Button'>Close Sesame</button> */}
     </>
   )
