@@ -1,0 +1,122 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Right-Left {
+    transform: translateX(100%);
+}
+
+.Top-Bottom {
+    transform: translateX(100%);
+}
+
+.Container {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+
+    position: relative;
+    overflow: hidden;
+
+    margin: auto;
+    margin-top: 200px;
+
+    height: 300px;
+    width: 600px;
+}
+
+.Outer-Door-Left {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+
+    background-color: yellow;
+
+    position: absolute;
+
+    left: 0px;
+
+    height: 100%;
+    width: 50%;
+
+    z-index: 1;
+
+    transition: 1s;
+}
+
+.Outer-Door-Right {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+
+    background-color: grey;
+
+    position: absolute;
+
+    right: 0px;
+
+    height: 100%;
+    width: 50%;
+
+    z-index: 1;
+
+    transition: 1s;
+}
+
+.Inner-Door-Top {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+
+    background-color: blue;
+
+    position: absolute;
+
+    Top: 0px;
+
+    height: 50%;
+    width: 100%;
+
+    z-index: -1;
+
+    transition: 2.5s;
+}
+
+.Inner-Door-Bottom {
+    border: 1px solid black;
+    display: flex;
+
+    background-color: red;
+
+    position: absolute;
+
+    bottom: 0px;
+
+    height: 50%;
+    width: 100%;
+
+    z-index: -1;
+
+    transition: 2.5s;
+}
+
+.Revealer {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.Reveal-Button {
+    margin-right: 10px;
+}
+
+.Hide-Button {
+    margin-left: 10px;
+}
