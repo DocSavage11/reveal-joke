@@ -2,17 +2,15 @@ import React from 'react'
 import { useState } from 'react'
 import './Box.css'
 import axios from 'axios'
-import { useEffect } from 'react'
 
 const Box = () => {
 
     const [doors, setDoors] = useState(false);
     const [joke, setJoke] = useState("");
 
-    const url = (`https://v2.jokeapi.dev/joke/Any`);
-
-
     
+    
+    const url = (`https://v2.jokeapi.dev/joke/Any`);
 
     const getJoke = () => {
         axios.get(url).then((result) => {
