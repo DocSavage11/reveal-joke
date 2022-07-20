@@ -111,6 +111,11 @@ a {
 .Revealer {
     margin-top: 20px;
     padding: 10px;
+    transition: .5s;
+}
+
+.Revealer:hover {
+    transform: translateY(2px);
 }
 
 .Reveal-Button {
