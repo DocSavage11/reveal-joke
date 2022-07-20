@@ -6,6 +6,7 @@ import axios from 'axios'
 const Box = () => {
 
     const [doors, setDoors] = useState(false);
+    const [phase, setPhase] = useState(true);
     const [joke, setJoke] = useState("");
 
     
@@ -23,9 +24,14 @@ const Box = () => {
     const openDoors = () => {
         setDoors((prevState) => !prevState)
     }
+ 
+    const Zindex = () => {
+        setPhase((prevState) => !prevState)
+    }
 
     const doubleFunction = () => {
         getJoke();
+        Zindex()
         openDoors();
     }
 
@@ -38,7 +44,7 @@ const Box = () => {
 
 
         <div className="Joke-Box">
-            <p id="Joke">{joke}</p>
+            <p className={ phase ? "Joke Phase" : "Joke"}>{joke}</p>
         </div>
 
         {/* <video src={('https://videos.ctfassets.net/adclj4ijug4e/2i2amXQjhbrtpbldae6hwy/fc4d86a18bf233a667ff0c54f354437f/maps_video.mp4')} autoPlay loop className="Video"></video> */}
